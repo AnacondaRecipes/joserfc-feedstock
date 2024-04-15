@@ -10,17 +10,17 @@ source:
   sha256: eebca7f587b1761ce43a98ffd5327f2b600b9aa5bb0a77b947687f503ad43bc0
 
 build:
-  noarch: python
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
-    - python >=3.8
+    - python
     - setuptools
     - pip
   run:
-    - python >=3.8
+    - python
     - cryptography
 
 test:
@@ -35,8 +35,10 @@ about:
   home: https://jose.authlib.org/en/dev/
   summary: The ultimate Python library for JOSE RFCs, including JWS, JWE, JWK, JWA, JWT
   dev_url: https://github.com/authlib/joserfc
+  doc_url: https://jose.authlib.org/en/dev/
   license: BSD-3-Clause
   license_file: LICENSE
+  license_family: BSD
 
 extra:
   recipe-maintainers:
