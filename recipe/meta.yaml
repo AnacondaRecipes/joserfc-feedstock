@@ -43,7 +43,7 @@ about:
   description: |
     joserfc is a Python library that provides a comprehensive implementation of several essential JSON Object Signing and Encryption (JOSE) standards.
   dev_url: https://github.com/authlib/joserfc
-  doc_url: https://jose.authlib.org/en/dev/
+  doc_url: https://jose.authlib.org
   license: BSD-3-Clause
   license_file: LICENSE
   license_family: BSD
