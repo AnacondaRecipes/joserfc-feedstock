@@ -39,7 +39,9 @@ test:
 
 about:
   home: https://jose.authlib.org/en/dev/
-  summary: The ultimate Python library for JOSE RFCs, including JWS, JWE, JWK, JWA, JWT
+  summary: Implementations of JOSE RFCs in Python
+  description: |
+    joserfc is a Python library that provides a comprehensive implementation of several essential JSON Object Signing and Encryption (JOSE) standards.
   dev_url: https://github.com/authlib/joserfc
   doc_url: https://jose.authlib.org/en/dev/
   license: BSD-3-Clause
