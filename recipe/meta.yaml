@@ -23,7 +23,6 @@ requirements:
   run:
     - python
     - cryptography
-    - pycryptodome
 
 test:
   source_files: 
