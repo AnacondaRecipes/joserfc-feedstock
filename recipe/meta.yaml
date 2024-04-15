@@ -35,6 +35,7 @@ test:
   requires:
     - pip
     - pytest
+    - pycryptodome
 
 about:
   home: https://jose.authlib.org/en/dev/
