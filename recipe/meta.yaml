@@ -1,5 +1,5 @@
 {% set name = "joserfc" %}
-{% set version = "1.7.7" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name }}
@@ -7,18 +7,19 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 471d0fd12a5a0d1c0942de280f39efe6f597878315033270b504d4d006d25510
+  sha256: cbf03cb2c6db8cc5289f1ef8718842e53dba244b4c0de5fefa0c0eaee4bde8db
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  skip: true  # [py<310]
+  skip: true  # [py<311]
 
 requirements:
   host:
     - python
     - pip
     - setuptools
+    - wheel
   run:
     - python
     - cryptography >=45.0.1
@@ -38,7 +39,7 @@ test:
 
 about:
   home: https://jose.authlib.org
-  summary: Implementations of JOSE RFCs in Python
+  summary: The ultimate Python library for JOSE RFCs, including JWS, JWE, JWK, JWA, JWT
   description: |
     joserfc is a Python library that provides a comprehensive implementation of several essential JSON Object Signing and Encryption (JOSE) standards.
   dev_url: https://github.com/authlib/joserfc
